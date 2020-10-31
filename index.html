@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/moving.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/colors-flip.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="img/icon-01.png"
+    />
+    <title>TROIS COULEURS</title>
+  </head>
+  <body>
+    <img class="body__back" src="img/bg-back-2.jpg" />
+    <section class="moving-poster">
+      <!-- 배경부 -->
+      <content class="background">
+        <img class="background__back-2" src="img/bg-back-2.jpg" />
+        <div class="background__back-dummy"></div>
+        <img class="background__fonts" src="img/bg-fonts-01.png" />
+        <div class="background__grad"></div>
+
+        <div class="mv__bar1"></div>
+        <div class="mv__bar2"></div>
+
+        <div class="background__bar-top"></div>
+        <div class="background__bar-bottom"></div>
+
+        <h1 class="main__header__title">TROIS COULEURS</h1>
+
+        <h1 class="main__header__actor">
+          JULIETTE BINOCHE · ZBIGNIEW ZAMACHOWSKI · JULIE DELPY · IRENE JACOB ·
+          JEAN LOUIS TRINTIGNANT
+        </h1>
+        <h1 class="main__header__director">KRZYSZTOF KIESLOWSKI</h1>
+      </content>
+
+      <!-- 메인요소 -->
+      <main class="wrapper__main">
+        <div class="main__colors">
+          <div class="main__colors-bleu colors__anim-first"></div>
+          <div class="main__colors-blanc colors__anim-first"></div>
+          <div class="main__colors-rouge colors__anim-first"></div>
+        </div>
+
+        <div class="main__colors">
+          <div class="main__colors-bleu colors__anim-second-bleu"></div>
+          <div class="main__colors-blanc colors__anim-second-blanc"></div>
+          <div class="main__colors-rouge colors__anim-second-rouge"></div>
+        </div>
+
+        <!-- 메인요소 - FLIP -->
+        <div class="main__colors-2">
+          <div id="BLEU" class="main__colors-flip">
+            <div class="main__colors-flip__inner">
+              <div class="main__colors-flip__front">
+                <img class="main__colors-flip__img" src="img/bleu-re-01.jpg" />
+              </div>
+              <div class="main__colors-flip__back">
+                <h3>liberté</h3>
+              </div>
+            </div>
+          </div>
+
+          <div id="BLANC" class="main__colors-flip">
+            <div class="main__colors-flip__inner">
+              <div class="main__colors-flip__front">
+                <img class="main__colors-flip__img" src="img/blanc-re-01.jpg" />
+              </div>
+              <div class="main__colors-flip__back">
+                <h3 style="color: black">égalité</h3>
+              </div>
+            </div>
+          </div>
+
+          <div id="ROUGE" class="main__colors-flip">
+            <div class="main__colors-flip__inner">
+              <div class="main__colors-flip__front">
+                <img class="main__colors-flip__img" src="img/rouge-re-01.jpg" />
+              </div>
+              <div class="main__colors-flip__back">
+                <h3>fraternité</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

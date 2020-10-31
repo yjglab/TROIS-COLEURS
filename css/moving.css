@@ -1,0 +1,118 @@
+.background__bar-top {
+  width: 1360px;
+  height: 3px;
+  position: absolute;
+  left: 143px;
+  top: 12px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  filter: blur(0.8px);
+  transition: 0.4s ease-in-out;
+}
+.background__bar-bottom {
+  width: 1360px;
+  height: 3px;
+  position: absolute;
+  left: 143px;
+  bottom: 12px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  filter: blur(0.8px);
+}
+@keyframes bar-top-anim {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+@keyframes bar-bottom-anim {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+
+.background__bar-top {
+  animation: bar-top-anim 13s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.background__bar-bottom {
+  animation: bar-bottom-anim 13s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.mv__bar1 {
+  display: flex;
+  position: absolute;
+  left: 410px;
+  top: 140px;
+  background-color: white;
+  opacity: 0;
+  width: 10px;
+  height: 580px;
+  filter: blur(7px);
+  animation: mv__bar-anim 8s ease-in-out infinite;
+  animation-delay: 3s;
+  transition: 0.4s ease-in-out;
+}
+.mv__bar2 {
+  display: flex;
+  position: absolute;
+  right: 410px;
+  top: 140px;
+  opacity: 0;
+  background-color: white;
+  transition: 0.4s ease-in-out;
+  width: 10px;
+  height: 580px;
+  filter: blur(7px);
+  animation: mv__bar-anim 8s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+@keyframes mv__bar-anim {
+  0% {
+    transform: none;
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(115px);
+  }
+  100% {
+    opacity: 0.75;
+    transform: none;
+  }
+}

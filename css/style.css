@@ -1,0 +1,38 @@
+@import "reset.css";
+@import "variables.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  background: rgb(0, 0, 0);
+}
+
+.moving-poster {
+  display: flex;
+  position: relative;
+  width: 1645px;
+  height: 975px;
+}
+.wrapper__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body__back {
+  opacity: 0;
+  animation: body__back-anim 2.7s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes body__back-anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

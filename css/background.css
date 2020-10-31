@@ -1,0 +1,170 @@
+.background {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+}
+
+.background__back-2 {
+  opacity: 0;
+  animation: background__back-2-anim 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  transition: background-image 2s ease-in-out;
+}
+@keyframes background__back-2-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.background__texture,
+.background__fonts {
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  animation: background__second-anim 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.background__fonts {
+  animation: background__fonts-anim 3s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+@keyframes background__fonts-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.background__grad {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 0.30015756302521013) 50%,
+    rgba(0, 0, 0, 1) 80%
+  );
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  animation: background__grad-anim 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+.main__header__title {
+  font-family: var(--main-font);
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 400;
+  position: absolute;
+  left: 675px;
+  top: 22px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  animation: main__header-anim 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+}
+.main__header__director {
+  font-family: var(--main-font);
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  font-weight: 400;
+  position: absolute;
+  right: 684px;
+  bottom: 12px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  animation: main__header-anim 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+}
+.main__header__actor {
+  font-family: var(--main-font);
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 100;
+  position: absolute;
+  right: 554px;
+  bottom: 55px;
+  opacity: 0;
+  word-spacing: 2px;
+  transition: 0.4s ease-in-out;
+  animation: main__header-anim 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+}
+@keyframes main__header-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.background__back-dummy {
+  width: 100%;
+  height: 100%;
+  background: rgb(17, 17, 17);
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  animation: background__back-dummy-anim 2s var(--spd-easeout);
+  animation-fill-mode: forwards;
+}
+@keyframes background__back-dummy-anim {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+
+@keyframes background__second-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes background__grad-anim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.75;
+  }
+}
+
+.body__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(20px);
+}
